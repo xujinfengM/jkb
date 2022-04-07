@@ -21,7 +21,7 @@
                     <path
                         d="M222.451715 513.728968L722.745849 13.63942599c18.242732-18.242732 47.73799-18.106338 65.844327 0.30688701a47.226511 47.226511 0 0 1-0.272788 66.389904l-433.358652 433.154061L788.215092 943.643665A47.192413 47.192413 0 0 1 788.692472 1010.033569 46.30585 46.30585 0 0 1 722.848144 1010.545048l-500.396429-496.81608z"
                         fill="#ffffff" p-id="4152"></path>
-                </svg>北京健康宝-2</div>
+                </svg>北京健康宝</div>
             <div class="right">
                 <svg t="1649269111796" class="icon" viewBox="0 0 1024 1024" version="1.1"
                     xmlns="http://www.w3.org/2000/svg" p-id="5020" width="200" height="200">
@@ -85,26 +85,20 @@
 
 </html>
 <script>
-    window.onload = function () {
-        let date1 = document.getElementById('date1');
-        let date2 = document.getElementById('date2');
-        let date3 = document.getElementById('date3');
-        let date4 = document.getElementById('date4');
-        try {
-            date1.innerHTML = moment || '没有';
-            date2.innerHTML = moment().format("HH:mm:ss");
-            setInterval(() => {
-                date2.innerHTML = moment().format("HH:mm:ss");
-            }, 1000);
-            date3.innerHTML = moment().format("MM-DD HH:mm");
-            date4.innerHTML = moment().format("MM-DD ") + "24:00";
-            let btn = document.getElementById("btn");
+    let date1 = document.getElementById('date1');
+    let date2 = document.getElementById('date2');
+    let date3 = document.getElementById('date3');
+    let date4 = document.getElementById('date4');
+    date1.innerHTML = moment().format("YYYY年MM月DD日");
+    date2.innerHTML = moment().format("HH:mm:ss");
+    setInterval(() => {
+        date2.innerHTML = moment().format("HH:mm:ss");
+    }, 1000);
+    date3.innerHTML = moment().format("MM-DD HH:mm");
+    date4.innerHTML = moment().format("MM-DD ") + "24:00";
+    let btn = document.getElementById("btn");
 
-            btn.onclick = function (e) {
-                location.reload();
-            }
-        } catch (e) {
-            date1.innerHTML = e
-        }
+    btn.onclick = function (e) {
+        location.reload();
     }
 </script>
