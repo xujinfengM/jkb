@@ -28,7 +28,7 @@ body{
     background-color: #f8f8f8;
     position: relative;
     z-index: 0;
-    font-size:18px;
+    font-size:16px;
 }
 .blue-bg{
     position:fixed;
@@ -118,7 +118,7 @@ body{
     margin: 0 auto;
     border: 22px dashed transparent;
     background-color: #fff;
-    /* border-image:url(./img/point-bg.png) 22 round; */
+    /* border-image:url(./img/point-bg.png) 38 stretch; */
     animation: borderAnimation .6s infinite linear ;
 }
 .img-wrap img{
@@ -175,7 +175,7 @@ li span:last-child{
 .copyright{
     text-align: center;
     color:#afafaf;
-    font-size:16px;
+    font-size:14px;
 }
 
 
@@ -195,15 +195,23 @@ li span:last-child{
   }
   @keyframes borderAnimation {
     0% {
-        border-image:url(./img/point-bg.png) 22 stretch;
+        border-image:url(./img/point-bg.png) 38 stretch;
+        -webkit-border-image: url(./img/point-bg.png) 38 stretch; /* Safari 3.1-5 */
+        -o-border-image: url(./img/point-bg.png) 38 stretch; /* Opera 11-12.1 */
     }
     50% {
-        border-image:url(./img/point-bg.png) 22 stretch;
+        border-image:url(./img/point-bg.png) 38 stretch;
+        -webkit-border-image: url(./img/point-bg.png) 38 stretch; /* Safari 3.1-5 */
+        -o-border-image: url(./img/point-bg.png) 38 stretch; /* Opera 11-12.1 */
     }
     51% {
-        border-image:url(./img/point-bg1.png) 22 stretch;
+        border-image:url(./img/point-bg1.png) 38 stretch;
+        -webkit-border-image: url(./img/point-bg1.png) 38 stretch; /* Safari 3.1-5 */
+        -o-border-image: url(./img/point-bg1.png) 38 stretch; /* Opera 11-12.1 */
     }
     100% {
-        border-image:url(./img/point-bg1.png) 22 stretch;
+        border-image:url(./img/point-bg1.png) 38 stretch;
+        -webkit-border-image: url(./img/point-bg1.png) 38 stretch; /* Safari 3.1-5 */
+        -o-border-image: url(./img/point-bg1.png) 38 stretch; /* Opera 11-12.1 */
     }
   }
