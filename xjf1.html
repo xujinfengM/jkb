@@ -90,17 +90,21 @@
         let date2 = document.getElementById('date2');
         let date3 = document.getElementById('date3');
         let date4 = document.getElementById('date4');
-        date1.innerHTML = moment || '没有';
-        date2.innerHTML = moment().format("HH:mm:ss");
-        setInterval(() => {
+        try {
+            date1.innerHTML = moment || '没有';
             date2.innerHTML = moment().format("HH:mm:ss");
-        }, 1000);
-        date3.innerHTML = moment().format("MM-DD HH:mm");
-        date4.innerHTML = moment().format("MM-DD ") + "24:00";
-        let btn = document.getElementById("btn");
+            setInterval(() => {
+                date2.innerHTML = moment().format("HH:mm:ss");
+            }, 1000);
+            date3.innerHTML = moment().format("MM-DD HH:mm");
+            date4.innerHTML = moment().format("MM-DD ") + "24:00";
+            let btn = document.getElementById("btn");
 
-        btn.onclick = function (e) {
-            location.reload();
+            btn.onclick = function (e) {
+                location.reload();
+            }
+        } catch (e) {
+            date1.innerHTML = e
         }
     }
 </script>
