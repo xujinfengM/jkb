@@ -1,0 +1,17 @@
+.status-wrap span{
+    animation: statusAnimation 1s infinite linear ;
+}
+@keyframes statusAnimation {
+    0% {
+        color:#4bc82c;
+    }
+    50% {
+        color:#4bc82c;
+    }
+    51% {
+        color: #FFF;
+    }
+    100% {
+        color: #FFF;
+    }
+  }

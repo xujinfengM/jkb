@@ -187,10 +187,10 @@ li span:last-child{
         color:#4bc82c;
     }
     51% {
-        color: #FFF;
+        color:#4bc82c;
     }
     100% {
-        color: #FFF;
+        color:#4bc82c;
     }
   }
   @keyframes borderAnimation {
